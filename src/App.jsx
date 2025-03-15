@@ -23,7 +23,7 @@ function App() {
     const fetchapi = async () => {
       try {
         const response = await fetch(
-          `https://api.aladhan.com/v1/timingsByCity/11-11-2024?country=SA&city=${city}`
+          `https://api.aladhan.com/v1/timingsByCity/15-03-2025?country=SA&city=${city}`
         );
         const data = await response.json();
         setPrayersTime(data.data.timings);
